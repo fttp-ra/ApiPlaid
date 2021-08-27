@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://unpkg.com/ed-grid@3.0.0/src/css/ed-grid.min.css" rel="stylesheet">
+    <head>
+        <title>Connect a bank</title>
+      </head>
+<body>
+    <section class="l-section s-py-4">
+        
+        <div class="ed-grid lg-grid-2 row-gap s-gap-2 m-gap-4">
+          
+          <div class="s-column s-main-center lg-main-start lg-cross-start s-center lg-left">
+            <h1>Welcome user</h1>
+            <p>This interface, for connection kiiper and plaid.</p>
+
+            <form action="http://localhost:3000/link/token/create" onclick="click()" method="POST">
+                <div class="s-main-center">
+                    <button class="button s-mr-2 s-mb-2 m-mb-0" type="submit">Connected</button>
+                    </div>
+                </form>
+          </div>
+         
+      </section>
+    
+      <script>
+          function click() {
+              alert('Se ha generado el token correctamente')
+          }
+      </script>
+</body>
+</html>
